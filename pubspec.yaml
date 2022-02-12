@@ -78,4 +78,5 @@ flutter:
 
   assets:
     - assets/images/login/
+    - assets/images/social_media/
     - assets/logo/

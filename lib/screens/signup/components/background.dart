@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:myfirstapp/screens/welcome/welcome.dart';
 
-class BackgroundLogin extends StatelessWidget {
+class Background extends StatelessWidget {
   final Widget child;
-  const BackgroundLogin({
+  const Background({
     Key? key,
     required this.child,
   }) : super(key: key);
@@ -39,14 +39,6 @@ class BackgroundLogin extends StatelessWidget {
             child: Image.asset(
               "assets/images/login/blue_circle.png",
               width: size.width * 0.3,
-            ),
-          ),
-          Positioned(
-            bottom: 0,
-            left: 0,
-            child: Image.asset(
-              "assets/images/login/orange_circle.png",
-              width: size.width * 0.2,
             ),
           ),
           child,
