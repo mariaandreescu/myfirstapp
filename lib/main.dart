@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/adapters.dart';
 import 'package:myfirstapp/constants.dart';
 import 'package:myfirstapp/screens/welcome/welcome.dart';
 
-void main() {
+Future<void> main() async {
+  await Hive.initFlutter(); //init hive
   runApp(const MyApp());
 }
 

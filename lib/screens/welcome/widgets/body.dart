@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:myfirstapp/components/custom_button.dart';
 import 'package:myfirstapp/constants.dart';
 import 'package:myfirstapp/screens/login/log_in.dart';
 import 'package:myfirstapp/screens/signup/sign_up.dart';
-import 'package:myfirstapp/screens/welcome/components/background.dart';
+import 'package:myfirstapp/screens/signup/widgets.dart';
+import 'package:myfirstapp/widgets/custom_button.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
@@ -18,7 +18,7 @@ class Body extends StatelessWidget {
           children: <Widget>[
             SizedBox(height: size.height * 0.06),
             const Text(
-              "Welcome to Notes",
+              welcomeText,
               style: TextStyle(
                 fontSize: 40,
                 fontFamily: 'Font1',
@@ -41,7 +41,7 @@ class Body extends StatelessWidget {
                   ),
                 );
               },
-              text: "Login",
+              text: loginText,
               boxColor: honeyColor,
               textColor: Colors.white,
             ),
@@ -56,7 +56,7 @@ class Body extends StatelessWidget {
                   ),
                 );
               },
-              text: "Signup",
+              text: signupText,
               boxColor: roseColor,
               textColor: Colors.black,
             ),

@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:myfirstapp/components/custom_button.dart';
 import 'package:myfirstapp/constants.dart';
-import 'package:myfirstapp/screens/login/components/already_have_an_account_check.dart';
-import 'package:myfirstapp/screens/login/components/rounded_input_field.dart';
-import 'package:myfirstapp/screens/login/components/rounded_password_field.dart';
 import 'package:myfirstapp/screens/login/log_in.dart';
-import 'package:myfirstapp/screens/signup/components/background.dart';
-import 'package:myfirstapp/screens/signup/components/or_divider.dart';
-import 'package:myfirstapp/screens/signup/components/social_icon.dart';
+import 'package:myfirstapp/screens/signup/widgets.dart';
+import 'package:myfirstapp/widgets/widgets.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
@@ -22,7 +17,7 @@ class Body extends StatelessWidget {
           children: <Widget>[
             SizedBox(height: size.height * 0.06),
             const Text(
-              "signup",
+              signupText,
               style: TextStyle(
                 fontSize: 35,
                 fontFamily: 'Font1',
@@ -35,7 +30,7 @@ class Body extends StatelessWidget {
             ),
             SizedBox(height: size.height * 0.03),
             RoundedInputField(
-              hintText: 'Your input here',
+              hintText: loginHintText,
               icon: Icons.person,
               onChanged: (String value) {},
             ),
@@ -45,7 +40,7 @@ class Body extends StatelessWidget {
             SizedBox(height: size.height * 0.03),
             CustomButton(
               onPressed: () {},
-              text: "SignUp",
+              text: signupText,
               boxColor: honeyColor,
               textColor: Colors.white,
             ),

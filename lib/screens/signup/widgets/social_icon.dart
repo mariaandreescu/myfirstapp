@@ -16,13 +16,6 @@ class SocialIcon extends StatelessWidget {
       onTap: press,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10),
-        // decoration: BoxDecoration(
-        //   border: Border.all(
-        //     width: 2,
-        //     color: greyColor,
-        //   ),
-        //   shape: BoxShape.circle,
-        // ),
         child: SvgPicture.asset(
           iconSrc,
           height: 30,
